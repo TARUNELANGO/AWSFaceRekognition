@@ -20,7 +20,7 @@ def index_faces(bucket, key):
         Image={"S3Object":
             {"Bucket": bucket,
             "Name": key}},
-            CollectionId="famouspersons")
+            CollectionId="facerekognition_collection")
     return response
     
 def update_index(tableName,faceId, fullName):
@@ -59,7 +59,7 @@ def lambda_handler(event, context):
             ret = s3.head_object(Bucket=bucket,Key=key)
             personFullName = ret['Metadata']['fullname']
 
-            update_index('face_recognition',faceId,personFullName)
+            update_index('facerecognition',faceId,personFullName)
 
         # Print response to console
         print(response)
