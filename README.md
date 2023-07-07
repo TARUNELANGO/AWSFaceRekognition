@@ -3,7 +3,10 @@ Create a simple face recognition service with AWS S3, AWS Lambda, AWS DynamoDB a
 
 ## Commands
 
-Video Link: [https://youtu.be/oHSesteFK5c](https://youtu.be/oHSesteFK5c)
+Video Link: [https://youtu.be/oHSesteFK5c](https://youtu.be/oHSesteFK5c)  
+The code I have provided for lamdafunction and policy.json has the names of the bucket and collection I have used.  
+Change the names accordingly.  
+Refer to the youtube video and the repository in its description as well.
 
 
 - Install aws-shell
